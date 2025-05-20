@@ -1,0 +1,4 @@
+pygame~=2.6.1
+pyttsx3~=2.98
+ultralytics~=8.3.128
+opencv-python~=4.11.0.86
