@@ -43,9 +43,6 @@ def speaker_worker():
         currently_speaking = False
         speak_queue.task_done()  # Mesajı tamamladı olarak işaretle
 
-# TODO: Gerçek zamanlı sistemde kuyruk büyürse eski mesajlar güncellenmeden sıraya girebilir.
-# TODO: İlerleyen sürümlerde kuyruk temizleme veya güncel veriyi güncelleme sistemi eklenmeli.
-
 #frame box olmadığı durumlarda kuyruğu sıfırlayarak gecikmeli seslerden kurtulan bir fonksiyon
 def clear_queue():
     if speak_queue.empty():
